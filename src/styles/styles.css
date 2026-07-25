@@ -12,10 +12,10 @@
     --color-dark-transparent: rgba(82, 101, 131, 0.06);
 
     /* FONTS */
-    --font-accent: "Lucida Console", monospace;
-    --font-heading: "Impact", sans-serif;
-    --font-plain: "Courier New", monospace;
-    --font-decoration: "Architects Daughter", cursive;
+    --font-accent: "Lucida Console";
+    --font-heading: "Impact";
+    --font-plain: "Courier New";
+    --font-decoration: "Architects Daughter";
 
     /* VARIABLES */
     --content-width: 1200px;
@@ -159,7 +159,7 @@ a {
     display: flex;
     flex-direction: column;
     margin: 0 auto 50px;
-    font-family: var(--font-plain);
+    font-family: var(--font-plain), monospace;
     font-size: 20px;
     line-height: 25px;
     color: #c084fc;
@@ -187,7 +187,7 @@ a {
 }
 
 .hero-text-accent {
-    font-family: var(--font-accent);
+    font-family: var(--font-accent), monospace;
     color: var(--color-accent-dark);
     font-weight: 400;
     font-size: 30px;
@@ -196,7 +196,7 @@ a {
 }
 
 .hero-text-header {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading), sans-serif;
     color: var(--color-accent-light);
     font-weight: 400;
     font-size: 96px;
@@ -205,7 +205,7 @@ a {
 }
 
 .hero-text-text {
-    font-family: var(--font-plain);
+    font-family: var(--font-plain), monospace;
     color: var(--color-accent-light);
     font-weight: 400;
     font-size: 20px;
@@ -216,7 +216,7 @@ a {
 .button-regular {
     display: inline-block;
     text-decoration: none;
-    font-family: var(--font-plain);
+    font-family: var(--font-plain), monospace;
     color: var(--color-accent-light);
     font-weight: 400;
     font-size: 24px;
@@ -271,7 +271,7 @@ a {
 }
 
 .contacts-text {
-    font-family: var(--font-plain);
+    font-family: var(--font-plain), monospace;
     color: var(--color-accent-light);
     font-weight: 400;
     font-size: 20px;
@@ -341,7 +341,7 @@ a {
 .hero-photo-accent {
     display: block;
     text-align: center;
-    font-family: var(--font-decoration);
+    font-family: var(--font-decoration), cursive;
     font-size: 25px;
     line-height: 34px;
     color: var(--color-accent-light);
@@ -367,7 +367,7 @@ a {
     gap: 36px;
     padding: 40px 30px;
     width: 270px;
-    font-family: var(--font-accent);
+    font-family: var(--font-accent), monospace;
     color: var(--color-main-dark);
     background-image: url("../img/textures/accent-light.png");
     background-repeat: no-repeat;
@@ -390,11 +390,22 @@ a {
     grid-area: icon;
     width: 49px;
     height: 43px;
-    background-image: url("../img/svg/list_item.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     align-self: start;
+}
+
+.fact-making::before {
+    background-image: url("../img/svg/list_item.svg");
+}
+
+.fact-learning::before {
+    background-image: url("../img/svg/list_item_2.svg");
+}
+
+.fact-curious::before {
+    background-image: url("../img/svg/list_item_3.svg");
 }
 
 .hero-facts-accent {
@@ -516,35 +527,43 @@ a {
     gap: 26px;
     padding: 60px;
 }
+
+.card {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .card-dark {
     color: var(--color-accent-light);
     background-image: url("../img/textures/dark-card.png");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 110% 115%;
 }
 
 .card-light {
     color: var(--color-main-dark);
     background-image: url("../img/textures/light-card.png");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 110% 120%;
 }
 
-.info-header {
-    font-family: var(--font-heading);
+.content-header {
+    font-family: var(--font-heading), sans-serif;
     font-weight: 400;
-    font-size: 50px;
     line-height: 1;
     text-transform: uppercase;
 }
 
-.info-text {
-    font-family: var(--font-plain);
+.info-header {
+    font-size: 50px;
+}
+
+.text {
+    font-family: var(--font-plain), monospace;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
+}
+
+.info-text {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -562,7 +581,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-decoration);
+    font-family: var(--font-decoration), cursive;
     color: var(--color-accent-light);
     font-size: 25px;
     line-height: 34px;
@@ -594,11 +613,7 @@ a {
 }
 
 .additional-info-header {
-    font-family: var(--font-heading);
-    font-weight: 400;
     font-size: 36px;
-    line-height: 1;
-    text-transform: uppercase;
 }
 
 .additional-info-list {
@@ -608,10 +623,6 @@ a {
 }
 
 .additional-info-item {
-    font-family: var(--font-plain);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
     position: relative;
     padding-left: 20px;
 }
@@ -635,18 +646,44 @@ a {
     gap: 28px;
 }
 
-.explore-main,
-.explore-accent {
+.explore-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     padding: 50px;
-    font-family: var(--font-plain);
+    font-family: var(--font-plain), monospace;
     font-weight: 700;
     font-size: 24px;
     line-height: 1;
     transition: color 0.2s ease;
+}
+
+.explore-button:hover,
+.explore-button:focus-visible {
+    color: var(--color-accent-dark);
+}
+
+.explore-button:active {
+    color: var(--explore-active-color);
+    background-image: var(--explore-active-bg);
+}
+
+.explore-button:focus-visible {
+    outline: 2px solid var(--color-main-light);
+    outline-offset: 4px;
+}
+
+.explore-button::after {
+    content: "";
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    background-color: currentColor;
+    mask-image: url("../img/svg/button-arrow.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
 }
 
 .explore-main {
@@ -657,38 +694,6 @@ a {
 .explore-accent {
     --explore-active-color: var(--color-main-dark);
     --explore-active-bg: url("../img/textures/light-card.png");
-}
-
-.explore-main:hover,
-.explore-main:focus-visible,
-.explore-accent:hover,
-.explore-accent:focus-visible {
-    color: var(--color-accent-dark);
-}
-
-.explore-main:active,
-.explore-accent:active {
-    color: var(--explore-active-color);
-    background-image: var(--explore-active-bg);
-}
-
-.explore-main:focus-visible,
-.explore-accent:focus-visible {
-    outline: 2px solid var(--color-main-light);
-    outline-offset: 4px;
-}
-
-.explore-main::after,
-.explore-accent::after {
-    content: "";
-    flex-shrink: 0;
-    width: 25px;
-    height: 25px;
-    background-color: currentColor;
-    mask-image: url("../img/svg/button-arrow.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
 }
 
 .quests-card {
@@ -703,11 +708,7 @@ a {
 }
 
 .quests-header {
-    font-family: var(--font-heading);
-    font-weight: 400;
     font-size: 36px;
-    line-height: 1;
-    text-transform: uppercase;
 }
 
 .quests-list {
@@ -720,25 +721,25 @@ a {
     position: relative;
     min-height: 48px;
     padding-left: 96px;
-    font-family: var(--font-plain);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
     display: flex;
     align-items: center;
 }
 
-.quests-list-item::before {
+.quests-list-item::before,
+.contact-list-item::before {
     content: "";
     position: absolute;
     left: 0;
     top: 50%;
-    width: 64px;
-    height: 64px;
     transform: translateY(-50%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.quests-list-item::before {
+    width: 64px;
+    height: 64px;
 }
 
 .quest-detective::before {
@@ -782,18 +783,7 @@ a {
 }
 
 .contact-card-header {
-    font-family: var(--font-heading);
-    font-weight: 400;
     font-size: 36px;
-    line-height: 1;
-    text-transform: uppercase;
-}
-
-.contact-card-text {
-    font-family: var(--font-plain);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
 }
 
 .contact-list {
@@ -806,25 +796,13 @@ a {
     position: relative;
     min-height: 35px;
     padding-left: 56px;
-    font-family: var(--font-plain);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
     display: flex;
     align-items: center;
 }
 
 .contact-list-item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
     width: 35px;
     height: 35px;
-    transform: translateY(-50%);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
 .contact-mail::before {
@@ -864,14 +842,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--font-plain);
+    font-family: var(--font-plain), monospace;
     font-weight: 400;
     font-size: 24px;
     line-height: 1;
     color: var(--color-accent-light);
 }
 
-@media (max-width: 1199px), (max-device-width: 1199px) {
+@media (max-width: 767px), (max-device-width: 767px) {
     .main-container,
     .footer {
         width: calc(100% - 40px);
@@ -942,7 +920,7 @@ a {
 
     .hero-text {
         order: 2;
-        width: 103%;
+        width: 100%;
         gap: 24px;
         padding: 50px 35px;
         background-position: right;
@@ -1067,11 +1045,7 @@ a {
         font-size: 40px;
     }
 
-    .info-text,
-    .additional-info-item,
-    .quests-list-item,
-    .contact-card-text,
-    .contact-list-item {
+    .text {
         font-size: 16px;
         line-height: 20px;
     }
@@ -1105,8 +1079,7 @@ a {
         gap: 14px;
     }
 
-    .explore-main,
-    .explore-accent {
+    .explore-button {
         padding: 28px 32px;
         font-size: 24px;
     }
@@ -1141,7 +1114,7 @@ a {
 
     .accent-sticker {
         top: auto;
-        right: -8px;
+        right: 0;
         bottom: -42px;
         width: 140px;
         height: 126px;
