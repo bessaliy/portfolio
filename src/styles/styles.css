@@ -754,6 +754,13 @@ a {
 
 .additional-info-item {
     position: relative;
+    padding: 7px 17px;
+    margin: 0 18px;
+    list-style: disc;
+}
+
+.project-additional-item {
+    position: relative;
     color: var(--color-accent-dark);
     border: solid 1px var(--color-accent-dark);
     border-radius: 6px;
