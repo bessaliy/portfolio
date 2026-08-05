@@ -678,6 +678,7 @@ a {
 .content-header {
     font-family: var(--font-heading), sans-serif;
     font-weight: 400;
+    font-size: 50px;
     line-height: 1;
     text-transform: uppercase;
 }
@@ -1116,6 +1117,275 @@ a {
 .project-header {
     font-size: 36px;
     text-transform: none;
+}
+
+.project-hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 38px;
+    margin-bottom: 56px;
+}
+
+.project-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    gap: 45px;
+    width: 463px;
+    padding: 46px 45px;
+    background-image: url("../img/textures/heading.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.project-title {
+    font-family: var(--font-heading), sans-serif;
+    color: var(--color-accent-light);
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.project-category {
+    font-family: var(--font-accent), monospace;
+    color: var(--color-accent-dark);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+.project-actions .project-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    align-self: auto;
+    color: var(--color-accent-light);
+    border: 1px solid var(--color-accent-light);
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: none;
+}
+
+.project-code-button::after {
+    content: "";
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    background-color: currentColor;
+    mask-image: url("../img/svg/tech-stack-icons/github.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.project-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-stack .project-stack-list {
+    gap: 16px;
+}
+
+.project-stack .tech-stack-list-item {
+    width: 42px;
+    height: 42px;
+    background-color: var(--color-accent-light);
+    background-image: none;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.project-stack .tech-stack-list-item.html {
+    mask-image: url("../img/svg/tech-stack-icons/html5.svg");
+}
+
+.project-stack .tech-stack-list-item.css {
+    mask-image: url("../img/svg/tech-stack-icons/css.svg");
+}
+
+.project-section-label {
+    font-family: var(--font-accent), monospace;
+    color: var(--color-accent-dark);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.project-preview {
+    position: relative;
+    flex: 0 0 650px;
+    padding-top: 28px;
+}
+
+.project-preview-image {
+    width: 100%;
+}
+
+.project-note {
+    position: absolute;
+    right: 24px;
+    bottom: -62px;
+    width: 190px;
+    padding: 42px 22px;
+    font-family: var(--font-decoration), cursive;
+    color: var(--color-accent-light);
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    rotate: 12deg;
+    background-image: url("../img/textures/decoration-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 28px;
+    align-items: stretch;
+    margin-bottom: 56px;
+}
+
+.project-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    padding: 50px;
+    background-size: 110% 130%;
+}
+
+.lessons-learned-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    padding: 37px 35px 71px;
+}
+
+.project-info-card .content-header {
+    font-size: 50px;
+}
+
+.challenge-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    padding: 50px;
+}
+
+.project-screenshots {
+    position: relative;
+    margin-bottom: 56px;
+    padding: 28px;
+}
+
+.project-screenshots-title {
+    display: inline-block;
+    margin-bottom: -8px;
+    padding: 24px 28px;
+    color: var(--color-accent-light);
+    font-size: 36px;
+    rotate: -8deg;
+    background-image: url("../img/textures/accent_block.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -20px;
+    left: -7px;
+}
+
+.project-screenshot-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-summary {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr) minmax(0, 1fr);
+    gap: 13px;
+    align-items: stretch;
+    margin-bottom: 36px;
+}
+
+.project-summary .project-info-card {
+    padding: 30px;
+}
+
+.project-summary .project-info-card .content-header {
+    font-size: 36px;
+}
+
+.project-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding: 42px 35px;
+    font-family: var(--font-decoration), cursive;
+    color: var(--color-accent-light);
+    background-image: url("../img/textures/highlights.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.project-highlights .project-section-label {
+    color: var(--color-accent-light);
+}
+
+.project-highlight-list,
+.project-work-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-work-list .text {
+    display: list-item;
+    margin-left: 18px;
+    list-style: disc;
+}
+
+.project-highlight-list .decorated-text {
+    position: relative;
+    padding-left: 18px;
+}
+
+.project-highlight-list .decorated-text::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+
+.project-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.decorated-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
 }
 
 @media (max-width: 767px), (max-device-width: 767px) {
