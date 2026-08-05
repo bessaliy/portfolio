@@ -1317,6 +1317,10 @@ a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.project-screenshot-next {
+    display: none;
+}
+
 .project-summary {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr) minmax(0, 1fr);
@@ -1346,8 +1350,12 @@ a {
     background-size: 100% 100%;
 }
 
-.project-highlights .project-section-label {
+.project-highlights-title {
     color: var(--color-accent-light);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .project-highlight-list,
@@ -1425,6 +1433,174 @@ a {
     .navigation-active::after {
         bottom: 0;
         height: 5px;
+    }
+
+    .project-page {
+        gap: 0;
+    }
+
+    .project-hero {
+        display: contents;
+    }
+
+    .project-intro {
+        width: 100%;
+        gap: 15px;
+        padding: 32px 28px;
+        margin-bottom: 18px;
+        background-size: 103% 103%;
+    }
+
+    .project-title {
+        font-size: 40px;
+    }
+
+    .project-category {
+        font-size: 24px;
+    }
+
+    .project-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .project-actions .project-button {
+        font-size: 20px;
+        padding: 10px 12px;
+    }
+
+    .project-code-button::after {
+        width: 14px;
+        height: 14px;
+    }
+
+    .project-section-label {
+        font-size: 24px;
+    }
+
+    .project-stack .tech-stack-list-item {
+        width: 28px;
+        height: 28px;
+    }
+
+    .project-preview {
+        display: none;
+    }
+
+    .project-note {
+        display: none;
+    }
+
+    .project-details {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 18px;
+    }
+
+    .project-page .project-info-card,
+    .project-page .challenge-card,
+    .project-page .lessons-learned-card,
+    .project-screenshots {
+        padding: 27px;
+    }
+
+    .project-page .content-header {
+        font-size: 30px;
+    }
+
+    .project-page .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .project-details .project-info-card:first-child::before {
+        content: "";
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background-image: url("../img/projects/sedona/sedona-main-img.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .project-screenshots {
+        padding: 0px;
+        margin-bottom: 18px;
+    }
+
+    .project-screenshots-title {
+        position: absolute;
+        background-size: 107% 103%;
+        rotate: none;
+        margin-bottom: 10px;
+        padding: 16px 18px;
+        font-size: 24px;
+    }
+
+    .project-screenshot-list {
+        display: block;
+    }
+
+    .project-screenshot-item:not(:first-child) {
+        display: none;
+    }
+
+    .project-screenshot-next {
+        position: absolute;
+        bottom: 103px;
+        right: -16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 58px;
+        min-height: 42px;
+        margin-left: auto;
+        padding: 8px 16px;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .project-summary {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 18px;
+    }
+
+    .project-summary .lessons-learned-card {
+        order: 1;
+    }
+
+    .project-summary .project-info-card {
+        order: 2;
+    }
+
+    .project-summary .project-info-card .content-header {
+        font-size: 30px;
+    }
+
+    .project-summary .project-highlights {
+        order: 3;
+    }
+
+    .project-highlights-title {
+        text-align: center;
+    }
+
+    .project-navigation {
+        justify-content: flex-end;
+    }
+
+    .project-navigation .button-regular:first-child {
+        display: none;
+    }
+
+    .project-navigation .button-regular:last-child {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 12px 16px;
     }
 
     .projects-hero {
