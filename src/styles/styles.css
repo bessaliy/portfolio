@@ -84,7 +84,10 @@ a {
 
 /*DIFFERENT STYLES*/
 
-.background-dark {
+/*.background-dark {*/
+/*    background-color: var(--color-main-dark);*/
+/*}*/
+body {
     background-color: var(--color-main-dark);
 }
 
