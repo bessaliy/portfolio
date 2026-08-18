@@ -1,6 +1,6 @@
-import {Project} from './project_type';
+import type { Project } from './project_type';
 
-const Projects: Project[] = [
+export const Projects: Project[] = [
     {
         id: 'sedona',
         title: 'Sedona',
@@ -73,7 +73,10 @@ const Projects: Project[] = [
         challenge: 'The biggest challenge was understanding how frontend applications communicate with a server. ' +
             'Working with asynchronous requests and keeping the interface synchronized with incoming data was completely new to me after building static websites.',
 
-        about: 'Keksogram was my first JavaScript-focused project. Users can browse photos loaded from a server, upload their own images, apply effects, and leave comments. ' +
+        about: 'Keksogram was my first JavaScript-focused project.\n' +
+            '\n' +
+            'Users can browse photos loaded from a server, upload their own images, apply effects, and leave comments. \n' +
+            '\n' +
             'The project introduced me to interactive frontend development and working with external data.',
 
         whatIDid: [
@@ -265,7 +268,7 @@ const Projects: Project[] = [
         title: 'My Portfolio',
         category: 'portfolio',
         difficulty: 'advanced',
-        shortDescription: 'A personal portfolio website designed to showcase my projects, skills, and growth as a frontend developer.',
+        shortDescription: 'A personal portfolio website designed to showcase my projects, skills, and growth.',
 
         stack: ['React', 'Next.js', 'Figma', 'CSS', 'TypeScript'],
 
@@ -280,7 +283,8 @@ const Projects: Project[] = [
 
         challenge: 'How do I design and build a portfolio that reflects both my work and the way I think?',
 
-        about: 'Unlike my previous projects, there was no predefined design, roadmap, or specification. ' +
+        about: 'Unlike my previous projects, there was no predefined design, roadmap, or specification. \n' +
+            '\n' +
             'Every decision had to be made from scratch, from the visual identity and content structure to the technical implementation.',
 
         whatIDid: [

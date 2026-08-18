@@ -1223,6 +1223,51 @@ body {
     mask-image: url("../img/svg/tech-stack-icons/css.svg");
 }
 
+.project-stack .tech-stack-list-item.javascript {
+    -webkit-mask-image: url("../img/svg/tech-stack-icons/javascript.svg");
+    mask-image: url("../img/svg/tech-stack-icons/javascript.svg");
+}
+
+.project-stack .tech-stack-list-item.typescript {
+    -webkit-mask-image: url("../img/svg/tech-stack-icons/typescript.svg");
+    mask-image: url("../img/svg/tech-stack-icons/typescript.svg");
+}
+
+.project-stack .tech-stack-list-item.react {
+    -webkit-mask-image: url("../img/svg/tech-stack-icons/react.svg");
+    mask-image: url("../img/svg/tech-stack-icons/react.svg");
+}
+
+.project-stack .tech-stack-list-item.redux {
+    -webkit-mask-image: url("../img/svg/tech-stack-icons/redux.svg");
+    mask-image: url("../img/svg/tech-stack-icons/redux.svg");
+}
+
+.project-stack .tech-stack-list-item.jest {
+    -webkit-mask-image: url("../img/svg/tech-stack-icons/jest.svg");
+    mask-image: url("../img/svg/tech-stack-icons/jest.svg");
+}
+
+.project-stack .tech-stack-list-item.next {
+    -webkit-mask-image: url("../img/svg/tech-stack-icons/next-js.svg");
+    mask-image: url("../img/svg/tech-stack-icons/next-js.svg");
+}
+
+.project-stack .tech-stack-list-item.figma {
+    -webkit-mask-image: url("../img/svg/tech-stack-icons/figma.svg");
+    mask-image: url("../img/svg/tech-stack-icons/figma.svg");
+}
+
+.project-stack .tech-stack-list-item.react-router {
+    -webkit-mask-image: url("../img/svg/tech-stack-icons/reactrouter.svg");
+    mask-image: url("../img/svg/tech-stack-icons/reactrouter.svg");
+}
+
+.project-stack .tech-stack-list-item.github {
+    -webkit-mask-image: url("../img/svg/tech-stack-icons/github.svg");
+    mask-image: url("../img/svg/tech-stack-icons/github.svg");
+}
+
 .project-section-label {
     font-family: var(--font-accent), monospace;
     color: var(--color-accent-dark);

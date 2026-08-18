@@ -2,13 +2,16 @@ import './styles/styles.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {AppRoute} from "./const.ts";
 import Layout from "./components/layout/layout.tsx";
-import Header from "./components/layout/header.tsx";
-import Footer from "./components/layout/footer.tsx";
+import MainPage from "./pages/main-page/main-page.tsx";
+import ProjectsPage from "./pages/projects-page/projects-page.tsx";
+import ProjectPage from "./pages/project-page/project-page.tsx";
+import ScrollToTop from "./components/scroll-to-top/scroll-to-top.tsx";
 
 function App() {
 
   return (
    <BrowserRouter>
+     <ScrollToTop />
      <Routes>
        <Route
        path={AppRoute.MainPage}
@@ -16,12 +19,17 @@ function App() {
        >
          <Route
            index
-           element={<Header/>}
+           element={<MainPage />}
          />
 
          <Route
              path={AppRoute.ProjectsList}
-             element={<Footer />}
+             element={<ProjectsPage />}
+         />
+
+         <Route
+               path={AppRoute.ProjectPage}
+               element={<ProjectPage />}
          />
        </Route>
      </Routes>
